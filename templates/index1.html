@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InsightCore – Smart Job Portal for Candidates</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">InsightCore</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="http://127.0.0.1:5000/" class="nav-item nav-link active">Home</a>
+                    <a href="http://127.0.0.1:5000/about" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ProfileScore</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#github" class="dropdown-item">GitHubRank</a>
+                            <a href="#upload" class="dropdown-item">CVPersona</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#joblist" class="dropdown-item">Job Category</a>
+                            <a href="#review" class="dropdown-item">Testimonial</a>
+        
+                        </div>
+                    </div>
+                    <a href="http://127.0.0.1:5000/contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="#upload" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">CVUpload<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+<div class="container-fluid p-0">
+    <div class="owl-carousel header-carousel position-relative">
+        
+        <!-- Slide 1: AI-Powered CV Analysis -->
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="/static/img/carousel-1.jpg" alt="CV Analysis">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, 0.6);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-3 text-white animated slideInDown mb-4">AI-Powered CV Analysis & Personality Insights</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                Analyze resumes to predict personality traits, helping recruiters and job seekers make better decisions.
+                            </p>
+                            <a href="#upload" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Analyze CV</a>
+                            <a class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: GitHub Popularity Prediction -->
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="/static/img/carousel-2.jpg" alt="GitHub Popularity">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, 0.6);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Predict GitHub Popularity with AI</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                Evaluate a developer’s GitHub profile to predict influence, contributions, and expertise.
+                            </p>
+                            <a href="#github" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Analyze GitHub</a>
+                            <a class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary text-white py-5 shadow-sm wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold"><i class="fab fa-github"></i> GitHub Popularity Predictor</h2>
+                    <p class="text-dark">Analyze your GitHub presence with a single search</p>
+                </div>
+                <form id="githubForm" action="/fetch_data" method="POST" class="d-flex justify-content-center">
+                    <div class="input-group shadow-sm" style="max-width: 500px; width: 100%;">
+                        <span class="input-group-text bg-light border-0"><i class="fab fa-github text-dark"></i></span>
+                        <input type="text" name="username" required class="form-control border-0 shadow-none"
+                            placeholder="Enter GitHub Username" style="font-size: 1rem;" />
+                        <button class="btn btn-dark px-4" type="submit">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+          <div class="container">
+              <h1 id="joblist" class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+              <div class="row g-4">
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                          <h6 class="mb-3">Information Technology</h6>
+                          <p class="mb-0">50+ Job Openings</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-code text-primary mb-4"></i>
+                          <h6 class="mb-3">Computer Science</h6>
+                          <p class="mb-0">80+ Career Opportunities</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-cogs text-primary mb-4"></i>
+                          <h6 class="mb-3">Mechanical</h6>
+                          <p class="mb-0">40+ Positions Available</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-bolt text-primary mb-4"></i>
+                          <h6 class="mb-3">Electrical Engineering</h6>
+                          <p class="mb-0">60+ Hiring Now</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-microchip text-primary mb-4"></i>
+                          <h6 class="mb-3">Electronics</h6>
+                          <p class="mb-0">55+ Open Roles</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-hard-hat text-primary mb-4"></i>
+                          <h6 class="mb-3">Civil Engineering</h6>
+                          <p class="mb-0">45+ Current Openings</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-flask text-primary mb-4"></i>
+                          <h6 class="mb-3">Chemical Engineering</h6>
+                          <p class="mb-0">30+ Jobs Available</p>
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                      <a class="cat-item rounded p-4">
+                          <i class="fa fa-3x fa-dna text-primary mb-4"></i>
+                          <h6 class="mb-3">Biotechnology</h6>
+                          <p class="mb-0">25+ Career Options</p>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        <!-- Category End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row g-0 about-bg rounded overflow-hidden">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="/static/img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid" src="/static/img/about-2.jpg" style="width: 85%; margin-top: 18.5%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid" src="/static/img/about-3.jpg" style="width: 85%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-100" src="/static/img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <!-- Heading & Description -->
+                        <h1 id="upload" class="mb-4 fw-bold text-dark">
+                            <i class="fas fa-user-tie text-primary"></i> Upload Your CV & Get Personalized Questions
+                        </h1>
+                        <p class="mb-3 text-muted">
+                            Analyze your personality from your CV and receive customized interview questions to enhance your job preparation.
+                        </p>
+                    
+                        <!-- Key Benefits -->
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fa fa-check-circle text-primary me-2 mt-1"></i>
+                            <p class="mb-0">AI-driven personality insights based on your CV</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fa fa-check-circle text-primary me-2 mt-1"></i>
+                            <p class="mb-0">Receive role-specific interview questions</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fa fa-check-circle text-primary me-2 mt-1"></i>
+                            <p class="mb-0">Only PDF format is accepted for analysis</p>
+                        </div>
+                    
+                        <!-- File Upload Form -->
+                        <form id="resumeForm" action="/upload_resume" method="POST" enctype="multipart/form-data">
+                            <div class="file-upload text-center bg-light p-4 rounded shadow-sm border">
+                                <input type="file" id="resume" name="resume" class="d-none" required onchange="updateFileName()" />
+                                <label for="resume" class="btn btn-outline-dark py-3 px-5 rounded-pill shadow">
+                                    <i class="fa fa-file-upload me-2"></i> Select Your CV
+                                </label>
+                                <p class="text-muted mt-2" id="fileName">No file chosen</p>
+                            </div>
+                    
+                            <button class="btn btn-dark w-100 py-3 mt-4 rounded-pill shadow-sm" type="submit">
+                                <i class="fa fa-upload me-2"></i> Upload & Analyze
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div id="review" class="container">
+                <h1 class="text-center mb-5">What Our Users Say!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item bg-light rounded p-4 shadow d-flex flex-column" style="min-height: 350px;">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="flex-grow-1 text-muted paragraph-clamp">
+                            "This platform provided in-depth personality analysis from my CV, revealing key strengths. The AI-generated interview questions were spot-on and helped me feel confident. The insights helped me structure better responses and align my answers with my strengths."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="/static/img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Emily Johnson</h5>
+                                <small>Software Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item bg-light rounded p-4 shadow d-flex flex-column" style="min-height: 350px;">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="flex-grow-1 text-muted paragraph-clamp">
+                            "The ML-based interview questions matched my personality traits perfectly. The GitHub popularity prediction gave me insights into my project visibility. The AI-driven personality analysis highlighted areas I should work on to improve my professional image."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="/static/img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Michael Carter</h5>
+                                <small>Data Scientist</small>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item bg-light rounded p-4 shadow d-flex flex-column" style="min-height: 350px;">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="flex-grow-1 text-muted paragraph-clamp">
+                            "I was amazed at how accurately the system identified my strengths. The AI-driven insights helped improve my CV and boost my interview performance. I especially liked the role-specific questions tailored to my personality traits."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="/static/img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Sophia Martinez</h5>
+                                <small>UI/UX Designer</small>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item bg-light rounded p-4 shadow d-flex flex-column" style="min-height: 350px;">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="flex-grow-1 text-muted paragraph-clamp">
+                            "The GitHub popularity prediction was insightful. The tailored interview questions were highly relevant, making my preparation much smoother. The system helped me craft a structured approach to answering behavioral questions."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="/static/img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Daniel Thompson</h5>
+                                <small>Full-Stack Developer</small>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Pooyappally, Kollam, India</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+917025116552</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>rojinroymathew@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Stay Ahead with Rojin Updates.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">InsightCore</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" >RojinCode</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/wow/wow.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+    <script>
+      // Update the file name display when a file is selected
+      document.getElementById("resume").addEventListener("change", function () {
+        const fileName = this.files[0]?.name || "No file chosen";
+        document.getElementById("fileName").textContent = fileName;
+      });
+    </script>
+</body>
+
+</html>
